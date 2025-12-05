@@ -1,15 +1,16 @@
-import './App.css';
+import "./App.css";
+import Testimonials from "../src/components/Testimonials.jsx";  
 
 function App() {
   return (
     <div className="App">
 
       {/* ================= NAVBAR ================= */}
+      <div className="first-container">
       <header className="navbar">
         <div className="navbar-container">
-          <div className="logo">
-            <span>StartlyHQ</span>
-          </div>
+          <img src="/image/logo.png" alt="Logo" className="logo-image" />
+          <div className="logo">StartlyHQ</div>
 
           <nav className="nav-links">
             <a href="#">Features</a>
@@ -22,22 +23,18 @@ function App() {
         </div>
       </header>
 
-      {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO ================= */}
       <section className="hero">
-
-        {/* LEFT CONTENT */}
         <div className="hero-content">
           <span className="hero-badge">● New — AI wealth insights now live</span>
 
           <h1>
-            Smarter Wealth <br />
-            Management for <br />
-            Everyone
+            Smarter Wealth <br /> Management for <br /> Everyone
           </h1>
 
           <p>
-            AI-driven investment and financial insights to grow your wealth securely.
-            Connect your accounts, unlock powerful analytics.
+            AI-driven investment and financial insights to grow your wealth
+            securely. Connect your accounts, unlock powerful analytics.
           </p>
 
           <div className="hero-buttons">
@@ -46,103 +43,159 @@ function App() {
           </div>
         </div>
 
-        {/* RIGHT EXCHANGE IMAGE */}
         <div className="hero-visual">
-          <img
-            src="/image/1.png"
-            alt="Exchange UI"
-            className="hero-exchange-image"
-          />
+          <img src="/image/1.png" alt="Hero UI" className="hero-exchange-image" />
         </div>
       </section>
 
-      {/* ================= TRUSTED BRANDS ================= */}
+      {/* ================= TRUSTED ================= */}
       <section className="trusted">
         <p>Trusted by leading financial innovators</p>
-
         <div className="trusted-logos">
-          <img src="/image/wise.svg" alt="Wise" />
-          <img src="/image/stripe.png" alt="Stripe" />
-          <img src="/image/revolut.png" alt="Revolut" />
-          <img src="/image/paypal.webp" alt="PayPal" />
-          <img src="/image/ally.png" alt="Ally" />
-          <img src="/image/chase.png" alt="Chase" />
+          <img src="/image/wise.svg" />
+          <img src="/image/stripe.png" />
+          <img src="/image/2.png" />
+          <img src="/image/paypal.webp" />
+          <img src="/image/ally.png" />
+          <img src="/image/chase.png" />
         </div>
       </section>
 
-      {/* ================= WHY SECTION ================= */}
-      <section className="why">
-        <h2>Why Traditional Wealth Management Falls Short</h2>
-        <div className="why-grid">
-          <div className="why-card why-card--pink">
-            <h4>Limited visibility</h4>
-            <p>Manual tracking and spreadsheets make it hard to see your full financial picture.</p>
+      {/* ================= WHY ================= */}
+      {/* ================= WHY TRADITIONAL FAILS ================= */}
+      <section className="why-fails">
+
+        <h2>Why Traditional Wealth<br></br> Management Falls Short</h2>
+        <p className="why-subtitle">
+          Most investors juggle multiple apps, spreadsheets, and advisors —<br></br>
+          without a clear picture of their financial future.
+        </p>
+
+        <div className="why-fails-grid">
+
+          {/* CARD 1 */}
+          <div className="why-fails-card blue">
+            <div className="why-icon-box">🧍</div>
+            <h4>Access to expert advice is limited</h4>
+            <p>
+              Traditional advisory models are expensive and often reserved
+              for high net worth clients.
+            </p>
+
+            <div className="mini-ui">
+              <strong>Total Balance</strong>
+              <h3>$20,670</h3>
+              <div className="mini-btns">
+                <span>Deposit</span>
+                <span>Send</span>
+              </div>
+            </div>
           </div>
-          <div className="why-card why-card--yellow">
-            <h4>Fragmented tools</h4>
-            <p>Your financial data is scattered across multiple platforms — hard to manage.</p>
+
+          {/* CARD 2 */}
+          <div className="why-fails-card yellow">
+            <div className="why-icon-box">💼</div>
+            <h4>Portfolio tracking is fragmented</h4>
+            <p>
+              Accounts scattered across banks, brokers, and apps lead to blind
+              spots and missed risks.
+            </p>
+
+            <div className="mini-ui">
+              <strong>Quick Transfers</strong>
+              <div className="mini-users">
+                <span>👤</span><span>👤</span><span>👤</span>
+              </div>
+            </div>
           </div>
-          <div className="why-card why-card--blue">
-            <h4>Slow insights</h4>
-            <p>Without automation, you get insights too late to act on them effectively.</p>
+
+          {/* CARD 3 */}
+          <div className="why-fails-card pink">
+            <div className="why-icon-box">📊</div>
+            <h4>Manual reporting wastes time</h4>
+            <p>
+              Spreadsheets, exports, and manual reconciliation eat into time
+              you could spend growing wealth.
+            </p>
+
+            <div className="mini-ui">
+              <strong>Transfer Money</strong>
+              <h3>$16,058.94</h3>
+            </div>
           </div>
+
         </div>
       </section>
 
-      {/* ================= AI-Powered Assistant ================= */}
+
+      {/* ================= AI ASSISTANT ================= */}
       <section className="assistant">
         <div className="assistant-left">
-          <h2>Your AI-Powered Financial Assistant</h2>
-          <p>Gain real-time insights, plan investments, and manage your money — all in one place.</p>
-          <button className="btn btn-secondary">Get Started Now</button>
+          <h2>Your AI-Powered<br></br> Financial Assistant</h2>
+          <p>StartlyHQ combines AI and human expertise to help<br></br>you invest, track, and grow your wealth effortlessly.<br></br>One secure platform for every account.</p>
+          <button className="btn-btn-secondary">Get Started Now ↗</button>
         </div>
 
         <div className="assistant-right">
           <div className="assistant-box">
-            <b>Portfolio Management</b>
-            <p>Aggregate your bank, brokerage, and crypto accounts into one real-time view.</p>
+            <h9><b> Portfolio Management</b></h9>
+            <p>Aggregate your bank, breakage, and<br></br>crypto accounts into one real-time view.</p>
           </div>
 
           <div className="assistant-box">
-            <b>Investment Insights</b>
-            <p>AI analyzes your holdings to surface opportunities and hidden risks.</p>
+            <h9><b>Investment Insights</b></h9>
+            <p>AI analyses your holdings to surface<br></br>oppurtunities and hidden risks.</p>
           </div>
 
           <div className="assistant-box">
-            <b>Risk Analysis</b>
-            <p>Understand how market shifts affect your long-term goals with scenario modeling.</p>
+            <h9><b>Risk Analysis</b></h9>
+            <p>Understand how market shifts effect your<br></br>long-term goals with scenerio modeling.</p>
           </div>
 
           <div className="assistant-box">
-            <b>Tailored Suggestions</b>
-            <p>Tailored guidance based on your risk profile, timeline, and financial plan.</p>
+            <h9><b>Tailored Suggestions</b></h9>
+            <p>Tailored guidance based on your risk<br></br>profiles, timeline, and financial plan.</p>
           </div>
         </div>
       </section>
 
-      {/* ================= FEATURES UI IMAGE SECTION ================= */}
+      {/* ================= FEATURES PREVIEW ================= */}
       <section className="features-ui-image-section">
         <h1>
-          Features Designed to <br />
-          Grow Your Wealth
+          Features Designed to <br /> Grow Your Wealth
         </h1>
 
-        <p>
-          Everything you need to monitor, optimize, and protect your investments
-          in one intuitive workspace.
-        </p>
+        <p>Everything you need to mentor, optimize, and protect<br></br>your investment in one intuitive workspace</p>
 
-        <img
-          src="/image/5.png"
-          alt="Platform Features Preview"
-          className="features-ui-image"
-        />
+        <img src="/image/11.png" className="features-ui-image" />
       </section>
-      {/* ================= SIMPLE STEPS SECTION ================= */}
+      <section className="secure-section">
+        <div className="secure-content">
+          <h1>Secure Transactions</h1>
+
+          <p>
+            Bank-level security, encryption, and complaince<br></br>to protect your funds and data.
+          </p>
+
+
+          <button className="btn btn-primary">Get Started for Free </button>
+
+        </div>
+
+        <div className="hero-visual">
+          <img src="/image/12.png" alt="Hero UI" className="hero-exchange-image" />
+        </div>
+
+      </section>
+      <div className="secure-image-wrapper">
+      <img src="/image/14.png" className="features-ui-image" />
+      </div>
+    </div>
+      
+      {/* ================= SIMPLE STEPS ================= */}
       <section className="steps-section">
-        <h2>
-          Simple Steps to <br />
-          Financial Success
+        <h2 className="steps-title">
+          Simple Steps to <br /> Financial Success
         </h2>
 
         <div className="steps-grid">
@@ -150,6 +203,9 @@ function App() {
           {/* STEP 01 */}
           <div className="step-card">
             <span className="step-number">Step 01</span>
+
+            <div className="step-bg-icon">👤</div>
+
             <h3>Sign Up</h3>
             <p>
               Create your secure account in minutes with email or SSO providers.
@@ -159,6 +215,9 @@ function App() {
           {/* STEP 02 */}
           <div className="step-card">
             <span className="step-number">Step 02</span>
+
+            <div className="step-bg-icon">🔗</div>
+
             <h3>Connect Accounts</h3>
             <p>
               Link your bank and investment accounts safely through secure integrations.
@@ -168,6 +227,9 @@ function App() {
           {/* STEP 03 */}
           <div className="step-card">
             <span className="step-number">Step 03</span>
+
+            <div className="step-bg-icon">📊</div>
+
             <h3>Get Insights</h3>
             <p>
               Receive AI-driven recommendations customized to your risk profile and goals.
@@ -176,205 +238,214 @@ function App() {
 
         </div>
       </section>
-      {/* ================= WHY STARTLYHQ ================= */}
-      <section className="why-startly">
+      {/* ================= WHY STARTLY + PRICING ================= */}
+      
+      <section className="why-pricing-wrapper">
 
-        {/* LEFT SIDE */}
-        <div className="why-left">
-          <h2>Why StartlyHQ?</h2>
-          <p>
-            Built for modern investors who want institutional-grade intelligence
-            without the complexity.
-          </p>
+        {/* ================= WHY STARTLYHQ ================= */}
+        <div className="why-startly-new">
+        
+          {/* LEFT */}
+          <div className="why-left-new">
+            <h2>Why StartlyHQ?</h2>
+            <p>
+              Built for modern investors who want institutional-grade intelligence
+              without the complexity.
+            </p>
 
-          {/* PREVIEW CARD */}
-          <div className="why-preview-card">
-            <div className="preview-header">
-              <span>🔊</span>
-              <strong>StartlyHQ</strong>
+            <div className="preview-card-new">
+              <div className="preview-top">
+                <span>🔊</span>
+                <strong>StartlyHQ</strong>
+              </div>
+
+              <div className="preview-balance">
+                <p>Savings Card</p>
+                <h3>$16,058.94</h3>
+              </div>
+
+              <div className="preview-actions">
+                <span>⬆</span>
+                <span>⬇</span>
+                <span>➤</span>
+                <span>▶</span>
+                <span>⋯</span>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT GRID */}
+          <div className="why-right-new">
+
+            <div className="why-box orange">
+              <div className="why-icon">🧠</div>
+              <h4>Trusted AI recommendations.</h4>
+              <p>Models trained on decades of market data and rigorously backtested.</p>
             </div>
 
-            <div className="preview-balance">
-              <p>Savings Card</p>
-              <h3>$16,058.94</h3>
+            <div className="why-box yellow">
+              <div className="why-icon">🔒</div>
+              <h4>Secure and private</h4>
+              <p>End-to-end encryption, read-only connections, and strict privacy controls.</p>
             </div>
 
-            <div className="preview-actions">
-              <span>⬆</span>
-              <span>⬇</span>
-              <span>➤</span>
-              <span>▶</span>
-              <span>⋯</span>
+            <div className="why-box green">
+              <div className="why-icon">🌍</div>
+              <h4>Easy-to-understand insights</h4>
+              <p>Clear explanations for every recommendation, no jargon required.</p>
             </div>
+
+            <div className="why-box dark">
+              <div className="why-icon">👑</div>
+              <h4>24/7 access to your dashboard</h4>
+              <p>On web and mobile, with real-time updates whenever markets move.</p>
+            </div>
+
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="why-right">
+        {/* ================= PRICING ================= */}
+        <div className="pricing-new-ui">
+          <h2>
+            Choose the Plan That <br /> Fits Your Goals
+          </h2>
 
-          <div className="why-card">
-            <div className="why-icon orange">🧠</div>
-            <h4>Trusted AI recommendations.</h4>
-            <p>
-              Models trained on decades of market data and rigorously backtested.
-            </p>
-          </div>
+          <div className="pricing-grid-ui">
 
-          <div className="why-card">
-            <div className="why-icon yellow">🔒</div>
-            <h4>Secure and private</h4>
-            <p>
-              End-to-end encryption, read-only connections, and strict privacy controls.
-            </p>
-          </div>
+            {/* BASIC */}
+            <div className="pricing-card-ui basic">
+              <h3 className="basic">Basic</h3>
+              <p>For getting started with AI-assisted investing.</p>
 
-          <div className="why-card">
-            <div className="why-icon green">🌍</div>
-            <h4>Easy-to-understand insights</h4>
-            <p>
-              Clear explanations for every recommendation, no jargon required.
-            </p>
-          </div>
-
-          <div className="why-card">
-            <div className="why-icon dark">👑</div>
-            <h4>24/7 access to your dashboard</h4>
-            <p>
-              On web and mobile, with real-time updates whenever markets move.
-            </p>
-          </div>
-
-        </div>
-      </section>
-      {/* ================= PRICING & TESTIMONIALS ================= */}
-      <section className="pricing-new">
-
-        <h2 className="pricing-title">
-          Choose the Plan That <br /> Fits Your Goals
-        </h2>
-
-        <div className="pricing-cards">
-
-          {/* BASIC */}
-          <div className="pricing-card basic">
-            <h3>Basic</h3>
-            <p className="plan-desc">For getting started with AI-assisted investing.</p>
-
-            <div className="price">
-              <strong>$0.00</strong>
-              <span>Billed per month</span>
-            </div>
-
-            <button className="pricing-btn">Start Free Trial</button>
-          </div>
-
-          {/* PRO */}
-          <div className="pricing-card pro">
-            <h3>Pro</h3>
-            <p className="plan-desc">
-              For active investors who want real-time signals.
-            </p>
-
-            <div className="price">
-              <strong>$19.00</strong>
-              <span>Billed per month</span>
-            </div>
-
-            <button className="pricing-btn">Start Free Trial</button>
-          </div>
-
-          {/* ENTERPRISE */}
-          <div className="pricing-card enterprise">
-            <h3>Enterprise</h3>
-            <p className="plan-desc">
-              For firms and family offices with complex needs.
-            </p>
-
-            <div className="price">
-              <strong>Custom</strong>
-              <span>Billed per month</span>
-            </div>
-
-            <button className="pricing-btn">Start Free Trial</button>
-          </div>
-
-        </div>
-
-        {/* ================= TESTIMONIALS ================= */}
-        <div className="testimonials">
-          <h2>Trusted by Investors Like You</h2>
-
-          <div className="testimonial-grid">
-
-            <div className="testimonial-card">
-              <div className="user-info">
-                <img src="/image/user1.png" alt="Emily" />
-                <div>
-                  <strong>Emily R.</strong>
-                  <span>Investor</span>
-                </div>
+              <div className="price-ui">
+                <strong>$0.00</strong>
+                <span>Billed per month</span>
               </div>
-              <p>
-                StartlyHQ helped me make smarter investment decisions! I can finally
-                see my full picture across accounts.
-              </p>
-              <div className="quote">❝❞</div>
+
+              <button>Start Free Trial</button>
             </div>
 
-            <div className="testimonial-card">
-              <div className="user-info">
-                <img src="/image/user2.png" alt="Jason" />
-                <div>
-                  <strong>Jason L.</strong>
-                  <span>Entrepreneur</span>
-                </div>
+            {/* PRO */}
+            <div className="pricing-card-ui pro">
+              <h3 className="pro">Pro</h3>
+              <p>For active investors who want real-time signals.</p>
+
+              <div className="price-ui">
+                <strong>$19.00</strong>
+                <span>Billed per month</span>
               </div>
-              <p>
-                Finally, an easy way to track all my finances. The alerts keep me
-                ahead of cash flow and investment changes.
-              </p>
-              <div className="quote">❝❞</div>
+
+              <button>Start Free Trial</button>
             </div>
 
-            <div className="testimonial-card">
-              <div className="user-info">
-                <img src="/image/user3.png" alt="Sofia" />
-                <div>
-                  <strong>Sofia K.</strong>
-                  <span>Tech Professional</span>
-                </div>
+            {/* ENTERPRISE */}
+            <div className="pricing-card-ui enterprise">
+              <h3 className="enterprise">Enterprise</h3>
+              <p>For firms and family offices with complex needs.</p>
+
+              <div className="price-ui">
+                <strong>Custom</strong>
+                <span>Billed per month</span>
               </div>
-              <p>
-                The AI insights are a game-changer. I understand my risk better and
-                feel more confident about the future.
-              </p>
-              <div className="quote">❝❞</div>
+
+              <button>Start Free Trial</button>
             </div>
 
-          </div>
-
-          <div className="testimonial-dots">
-            <span className="dot active"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
           </div>
         </div>
 
       </section>
+      <Testimonials />
 
 
-
-
-
-      {/* ================= FOOTER ================= */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-logo">StartlyHQ</div>
-          <p>© 2025 StartlyHQ. All Rights Reserved.</p>
+      <section className="seamless">
+        <div className="seamless-top">
+          <h2>Seamless Connections With Your<br></br>Financial Tools</h2>
+          <p>StartlyHQ integrates with leading banks, payment<br></br>provides, and accounting platforms so your data stays in sync</p>
         </div>
+
+        <div className="seamless-logos">
+          <img src="./image/wise.svg" />
+          <img src="./image/stripe.png" />
+          <img src="./image/2.png" />
+          <img src="./image/paypal.webp" />
+          <img src="./image/ally.png" />
+          <img src="./image/chase.png" />
+        </div>
+      </section>
+   
+
+      {/* ================= GREEN CTA ================= */}
+      <section className="green-cta">
+        <div className="green-cta-left">
+          <h2>Take Control of Your Financial<br></br> Future Today</h2>
+          <p>Sign up and start your journey to smarter investing with AI-powered<br></br>insights and a complete view of your wealth.</p>
+          <button className="green-cta-btn">Start Free Trial ↗</button>
+        </div>
+
+        <div className="green-cta-right">
+          <img src="/image/6.png" />
+        </div>
+      </section>
+
+      {/* ================= FULL FOOTER ================= */}
+      <footer className="footer-full">
+
+        <div className="footer-top">
+
+          <div className="footer-brand">
+            <img src="/image/logo.png" alt="Logo" className="logo-image" />
+            <h3 className="logo">StartlyHQ</h3>
+            <p>AI-powered wealth management for individuals, startups, and modern financial teams.</p>
+          </div>
+
+          <div className="footer-col">
+            <strong>Features</strong>
+            <ul>
+              <li>Lead Management</li>
+              <li>Email Marketing</li>
+              <li>CRM Integration</li>
+              <li>Social Media Management</li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <strong>Navigation</strong>
+            <ul>
+              <li>Solutions</li>
+              <li>Resources</li>
+              <li>Company</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <strong>Social Handle</strong>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Threads</li>
+              <li>Pinterest</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="footer-bottom">
+          <span>© 2025 StartlyHQ.Inc. All Rights Reserved.</span>
+
+          <div className="footer-links">
+            <a href="#">Terms & Condition</a>
+            <a href="#">Privacy notice</a>
+          </div>
+      </div>
+
+        {/* ✅ BIG WATERMARK BRAND */}
+        <div className="footer-mega-text">StartlyHQ</div>
+
       </footer>
-
-    </div>
+      </div>
+   
   );
 }
 

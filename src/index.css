@@ -1,0 +1,339 @@
+/* ==== GLOBAL RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root, .App {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #F9FAFB;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ==== BUTTON STYLES ==== */
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #059669;
+  color: white;
+  padding: 12px 24px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #059669;
+  border: 2px solid #059669;
+  padding: 12px 24px;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #059669;
+  padding: 12px 24px;
+  border: 2px solid #059669;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #059669;
+}
+
+.nav-links a {
+  margin-right: 24px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.nav-links a:last-child {
+  margin-right: 0;
+}
+
+/* ==== HERO ==== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+  color: #4B5563;
+}
+
+.hero-buttons .btn {
+  margin-right: 16px;
+}
+
+.hero-visual .exchange-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  width: 300px;
+}
+
+.exchange-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* ==== WHY SECTION ==== */
+.why {
+  background: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 2.5rem;
+  margin-bottom: 48px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 300px;
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.why-card--pink {
+  background-color: #FDE8EC;
+}
+
+.why-card--yellow {
+  background-color: #FEF9E8;
+}
+
+.why-card--blue {
+  background-color: #EFF6FF;
+}
+
+.why-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  color: #4B5563;
+}
+
+/* ==== ASSISTANT SECTION ==== */
+.assistant {
+  background-color: #059669;
+  color: white;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.assistant-left {
+  max-width: 500px;
+}
+
+.assistant-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.assistant-left p {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+}
+
+.assistant-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.assistant-box {
+  background: white;
+  color: #059669;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* ==== FEATURES SECTION ==== */
+.features {
+  padding: 80px 40px;
+  text-align: center;
+  background: #F9FAFB;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 48px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* ==== PRICING SECTION ==== */
+.pricing {
+  background: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  margin-bottom: 48px;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.price-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  width: 260px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.price-card--highlight {
+  border: 2px solid #059669;
+  background: #FAF7F3;
+}
+
+.price-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.price-duration {
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #E5E7EB;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #059669;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-visual {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid, .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

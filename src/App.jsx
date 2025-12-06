@@ -1,22 +1,22 @@
 import "./App.css";
 import { useState } from "react";
-import logo from "./image/logo.png";
-import heroImg from "./image/1.png";
-import wise from "./image/wise.svg";
-import stripe from "./image/stripe.png";
-import revolt from "./image/2.png";
-import paypal from "./image/paypal.webp";
-import ally from "./image/ally.png";
-import chase from "./image/chase.png";
-import portfolio from "./image/1st.png";
-import budget from "./image/2nd.png";
-import invest from "./image/3rd.png";
-import effort from "./image/effort.png";
-import eleven from "./image/11.png";
-import twelve from "./image/12.png";
-import sixth from "./image/6.png";
+import logo from "./assets/image/logo.png";
+import heroImg from "./assets/image/1.png";
+import wise from "./assets/image/wise.svg";
+import stripe from "./assets/image/stripe.png";
+import revolt from "./assets/image/2.png";
+import paypal from "./assets/image/paypal.webp";
+import ally from "./assets/image/ally.png";
+import chase from "./assets/image/chase.png";
+import portfolio from "./assets/image/1st.png";
+import budget from "./assets/image/2nd.png";
+import invest from "./assets/image/3rd.png";
+import effort from "./assets/image/effort.png";
+import eleven from "./assets/image/11.png";
+import twelve from "./assets/image/12.png";
+import sixth from "./assets/image/6.png";
 
-import Testimonials from "../src/components/Testimonials.jsx";  
+import Testimonials from "./components/Testimonials.jsx";  
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -176,25 +176,25 @@ function App() {
         <div className="assistant-right">
           <div className="assistant-box">
             <img src={portfolio} alt="image"/>
-            <h9><b> Portfolio Management</b></h9>
+            <h1><b> Portfolio Management</b></h1>
             <p>Aggregate your bank, breakage, and<br></br>crypto accounts into one real-time view.</p>
           </div>
 
           <div className="assistant-box">
             <img src={budget} alt="image"/>
-            <h9><b>Investment Insights</b></h9>
+            <h1><b>Investment Insights</b></h1>
             <p>AI analyses your holdings to surface<br></br>oppurtunities and hidden risks.</p>
           </div>
 
           <div className="assistant-box">
             <img src={invest} alt="image"/>
-            <h9><b>Risk Analysis</b></h9>
+            <h1><b>Risk Analysis</b></h1>
             <p>Understand how market shifts effect your<br></br>long-term goals with scenerio modeling.</p>
           </div>
 
           <div className="assistant-box">
             <img src={invest} alt="image"/>
-            <h9><b>Tailored Suggestions</b></h9>
+            <h1><b>Tailored Suggestions</b></h1>
             <p>Tailored guidance based on your risk<br></br>profiles, timeline, and financial plan.</p>
           </div>
         </div>

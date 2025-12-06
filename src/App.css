@@ -491,7 +491,7 @@ body {
 
 }
 
-.assistant-box h9 {
+.assistant-box h1 {
   font-size: 25px;
   font-weight: 500;
   color: #111827;
@@ -1112,10 +1112,8 @@ img.features-ui-image1 {
 .hero,
 .container,
 .steps-section,
-.secure-section,
 .features-ui-image-section,
 .seamless,
-.green-cta,
 .footer-full {
   max-width: 1200px !important;
   width: 100% !important;

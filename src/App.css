@@ -432,29 +432,112 @@ body {
 }
 
 /* =============== ASSISTANT =============== */
+
+
+/* ================= AI ASSISTANT FIXED ================= */
+
 .assistant {
   max-width: 1200px;
-  margin: 80px auto 96px;   /* ✅ TOP GAP ADDED */
+  margin: 80px auto 96px;
   padding: 56px 56px;
   background: #059669;
   border-radius: 28px;
+
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 60px;
   align-items: center;
+
   box-shadow: 0 32px 80px rgba(15, 23, 42, 0.16);
 }
 
-
+/* LEFT SIDE */
 .assistant-left h2 {
   font-size: 50px;
   font-weight: 600;
   color: #ffffff;
   line-height: 1.2;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   letter-spacing: -0.03em;
 }
+
+.assistant-left p {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #bbf7d0;
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+
+/* RIGHT SIDE COLUMN */
+.assistant-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ✅ CARD — HEIGHT FIXED */
+.assistant-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+
+  font-size: 16px;
+  color: #111827;
+
+  width: 100%;
+  min-height: auto;   /* ✅ allows text to grow */
+  height: auto;       /* ✅ prevents clipping */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ✅ ICON + TITLE ROW */
+.assistant-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+/* ✅ ICON SIZE */
+.assistant-title-row img {
+  width: 24px;
+  padding-top: 2px;
+  height: auto;
+}
+
+/* ✅ TITLE TEXT */
+.assistant-title-row h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+
+/* ✅ ICON */
+
+
+/* ✅ DESCRIPTION — MAIN FIX */
+.assistant-box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+
+  padding-top: 6px;
+  padding-left: 0;      /* ✅ removed forced left padding */
+  text-align: left;
+
+  line-height: 1.6;    /* ✅ prevents overlap */
+  word-wrap: break-word;
+}
+
+
 .container {
   background-color: white;
   margin-bottom: 0 !important;
@@ -465,52 +548,6 @@ body {
   box-shadow: 0 20px 60px rgba(0,0,0,0.08);
 }
 
-.assistant-left p {
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-  color: #bbf7d0;
-  max-width: 1200px;
-}
-
-.assistant-right {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.assistant-box {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 14px 18px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
-  font-size: 17px;
-  height: 130px;
-  width: 400px;
-  color: #111827;
-
-}
-
-.assistant-box h1 {
-  font-size: 25px;
-  font-weight: 500;
-  color: #111827;
-  margin-bottom: 8px;
-  letter-spacing: 0.02em;
-}
-.assistant-box img {
-  width: 25px;
-  height: 20px;
-}
-.assistant-box p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #6b7280;
-  padding-top: 10px;
-  padding-left: 30px;
-  text-align: start;
-  line-height: 1.4;
-}
 
 /* =============== FEATURES PREVIEW =============== */
 .features-ui-image-section {
@@ -973,8 +1010,8 @@ img.features-ui-image1 {
 }
 
 .green-cta-left p {
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.0;
   color: #d1fae5;
   max-width: 420px;
   margin-bottom: 22px;
@@ -1294,24 +1331,7 @@ img.features-ui-image1 {
   }
 
   /* ---------- AI ASSISTANT ---------- */
-  .assistant {
-    grid-template-columns: 1fr;
-    padding: 36px 20px;
-    gap: 28px;
-    text-align: center;
-  }
-
-  .assistant-left h2 {
-    font-size: 32px;
-  }
-
-  .assistant-left p {
-    margin: 0 auto;
-  }
-
-  .assistant-box {
-    width: 100%;
-  }
+ 
   .container {
   padding: 32px 14px !important;
 }
@@ -1553,41 +1573,37 @@ html, body {
   }
 
   /* ================= ASSISTANT ================= */
-  assistant {
-    padding: 22px 12px !important;
-    gap: 22px;
+  .assistant {
+    grid-template-columns: 1fr;
+    padding: 32px 18px;
+    text-align: center;
   }
 
-  .assistant-left h2 {
-    font-size: 24px !important;
-    line-height: 1.25;
-  }
-
-  .assistant-left p {
-    font-size: 13px !important;
-    line-height: 1.5;
+  .assistant-right {
+    align-items: center;
   }
 
   .assistant-box {
-    width: 100% !important;
-    height: auto !important;
-    padding: 14px 14px !important;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 360px;
   }
 
-  .assistant-box img {
-    width: 20px;
-    height: 18px;
+  /* ✅ KEEP ICON + TEXT SIDE BY SIDE ON MOBILE */
+  .assistant-title-row {
+    justify-content: center;
   }
 
-  .assistant-box h9 {
-    font-size: 15px !important;   /* ✅ fixes oversized title */
+  .assistant-title-row img {
+    width: 22px;
+  }
+
+  .assistant-title-row h1 {
+    font-size: 16px;
   }
 
   .assistant-box p {
-    font-size: 13px !important;   /* ✅ readable but not bulky */
-    padding-left: 0 !important;
-    line-height: 1.45;
+    text-align: center;
+    font-size: 13px;
   }
 
   /* ✅ Center the "Get Started Now" button */

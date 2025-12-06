@@ -175,26 +175,34 @@ function App() {
 
         <div className="assistant-right">
           <div className="assistant-box">
+            <div className="assistant-title-row">
             <img src={portfolio} alt="image"/>
             <h1><b> Portfolio Management</b></h1>
+            </div>
             <p>Aggregate your bank, breakage, and<br></br>crypto accounts into one real-time view.</p>
           </div>
 
           <div className="assistant-box">
+            <div className="assistant-title-row">
             <img src={budget} alt="image"/>
             <h1><b>Investment Insights</b></h1>
+            </div>
             <p>AI analyses your holdings to surface<br></br>oppurtunities and hidden risks.</p>
           </div>
 
           <div className="assistant-box">
+            <div className="assistant-title-row">
             <img src={invest} alt="image"/>
             <h1><b>Risk Analysis</b></h1>
+            </div>
             <p>Understand how market shifts effect your<br></br>long-term goals with scenerio modeling.</p>
           </div>
 
           <div className="assistant-box">
+            <div className="assistant-title-row">
             <img src={invest} alt="image"/>
             <h1><b>Tailored Suggestions</b></h1>
+            </div>
             <p>Tailored guidance based on your risk<br></br>profiles, timeline, and financial plan.</p>
           </div>
         </div>

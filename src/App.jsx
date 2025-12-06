@@ -1,7 +1,9 @@
 import "./App.css";
+import { useState } from "react";
 import Testimonials from "../src/components/Testimonials.jsx";  
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
 
@@ -9,8 +11,10 @@ function App() {
       <div className="first-container">
       <header className="navbar">
         <div className="navbar-container">
+          <div className="brand">
           <img src="/image/logo.png" alt="Logo" className="logo-image" />
           <div className="logo">StartlyHQ</div>
+          </div>
 
           <nav className="nav-links">
             <a href="#">Features</a>
@@ -20,10 +24,26 @@ function App() {
           </nav>
 
           <button className="btn btn-primary">Get Started for Free ↗</button>
+          <div className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+        {menuOpen && (
+          <div className="mobile-menu">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            
+          </div>
+        )}
       </header>
 
       {/* ================= HERO ================= */}
+      <div className="section-wrapper">
       <section className="hero">
         <div className="hero-content">
           <span className="hero-badge">● New — AI wealth insights now live</span>
@@ -49,6 +69,7 @@ function App() {
       </section>
 
       {/* ================= TRUSTED ================= */}
+      <div className="container">
       <section className="trusted">
         <p>Trusted by leading financial innovators</p>
         <div className="trusted-logos">
@@ -138,21 +159,25 @@ function App() {
 
         <div className="assistant-right">
           <div className="assistant-box">
+            <img src="./image/1st.png" alt="image"/>
             <h9><b> Portfolio Management</b></h9>
             <p>Aggregate your bank, breakage, and<br></br>crypto accounts into one real-time view.</p>
           </div>
 
           <div className="assistant-box">
+            <img src="./image/2nd.png" alt="image"/>
             <h9><b>Investment Insights</b></h9>
             <p>AI analyses your holdings to surface<br></br>oppurtunities and hidden risks.</p>
           </div>
 
           <div className="assistant-box">
+            <img src="./image/3rd.png" alt="image"/>
             <h9><b>Risk Analysis</b></h9>
             <p>Understand how market shifts effect your<br></br>long-term goals with scenerio modeling.</p>
           </div>
 
           <div className="assistant-box">
+            <img src="./image/3rd.png" alt="image"/>
             <h9><b>Tailored Suggestions</b></h9>
             <p>Tailored guidance based on your risk<br></br>profiles, timeline, and financial plan.</p>
           </div>
@@ -188,8 +213,9 @@ function App() {
 
       </section>
       <div className="secure-image-wrapper">
-      <img src="/image/14.png" className="features-ui-image" />
+      <img src="/image/effort.png" className="features-ui-image1" />
       </div>
+    </div>
     </div>
       
       {/* ================= SIMPLE STEPS ================= */}
@@ -239,7 +265,7 @@ function App() {
         </div>
       </section>
       {/* ================= WHY STARTLY + PRICING ================= */}
-      
+      <div className="why-pricing-container">
       <section className="why-pricing-wrapper">
 
         {/* ================= WHY STARTLYHQ ================= */}
@@ -394,8 +420,10 @@ function App() {
         <div className="footer-top">
 
           <div className="footer-brand">
+            <div className="brand">
             <img src="/image/logo.png" alt="Logo" className="logo-image" />
             <h3 className="logo">StartlyHQ</h3>
+            </div>
             <p>AI-powered wealth management for individuals, startups, and modern financial teams.</p>
           </div>
 
@@ -445,6 +473,9 @@ function App() {
 
       </footer>
       </div>
+    </div>
+</div>
+
    
   );
 }

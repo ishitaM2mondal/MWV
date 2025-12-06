@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
 import "./Testimonials.css";
+import {profile} from "../assets/images/profile.png"
 
 const testimonials = [
   {
     name: "Emily R.",
     role: "Investor",
-    image: "./image/profile.png",
+    image: {profile},
     text: "StartlyHQ helped me make smarter investment decisions! I can finally see my full picture across accounts.",
   },
   {
     name: "Jason L.",
     role: "Entrepreneur",
-    image: "./image/profile.png",
+    image: {profile},
     text: "Finally, an easy way to track all my finances. The alerts keep me ahead of cash flow and investment changes.",
   },
   {
     name: "Sofia K.",
     role: "Tech Professional",
-    image: "./image/profile.png",
+    image:{profile},
     text: "The AI insights are a game-changer. I understand my risk better and feel more confident about the future.",
   },
 ];

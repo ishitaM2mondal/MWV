@@ -1,5 +1,21 @@
 import "./App.css";
 import { useState } from "react";
+import logo from "./assets/images/logo.png";
+import heroImg from "./assets/images/1.png";
+import wise from "./assets/images/wise.svg";
+import stripe from "./assets/images/stripe.png";
+import revolt from "./assets/images/2.png";
+import paypal from "./assets/images/paypal.webp";
+import ally from "./assets/images/ally.png";
+import chase from "./assets/images/chase.png";
+import portfolio from "./assets/images/1st.png";
+import budget from "./assets/images/2nd.png";
+import invest from "./assets/images/3rd.png";
+import {effort} from "./assets/images/effort.png";
+import {eleven} from "./assets/images/11.png";
+import {twelve} from "./assets/images/12.png";
+import {sixth} from "./assets/images/6.png";
+
 import Testimonials from "../src/components/Testimonials.jsx";  
 
 function App() {
@@ -12,7 +28,7 @@ function App() {
       <header className="navbar">
         <div className="navbar-container">
           <div className="brand">
-          <img src="/image/logo.png" alt="Logo" className="logo-image" />
+          <img src={logo} alt="Logo" className="logo-image" />
           <div className="logo">StartlyHQ</div>
           </div>
 
@@ -64,7 +80,7 @@ function App() {
         </div>
 
         <div className="hero-visual">
-          <img src="/image/1.png" alt="Hero UI" className="hero-exchange-image" />
+          <img src={heroImg} alt="Hero UI" className="hero-exchange-image" />
         </div>
       </section>
 
@@ -73,12 +89,12 @@ function App() {
       <section className="trusted">
         <p>Trusted by leading financial innovators</p>
         <div className="trusted-logos">
-          <img src="/image/wise.svg" />
-          <img src="/image/stripe.png" />
-          <img src="/image/2.png" />
-          <img src="/image/paypal.webp" />
-          <img src="/image/ally.png" />
-          <img src="/image/chase.png" />
+          <img src={wise} />
+          <img src={stripe} />
+          <img src={revolt} />
+          <img src={paypal} />
+          <img src={ally} />
+          <img src={chase} />
         </div>
       </section>
 
@@ -159,25 +175,25 @@ function App() {
 
         <div className="assistant-right">
           <div className="assistant-box">
-            <img src="./image/1st.png" alt="image"/>
+            <img src={portfolio} alt="image"/>
             <h9><b> Portfolio Management</b></h9>
             <p>Aggregate your bank, breakage, and<br></br>crypto accounts into one real-time view.</p>
           </div>
 
           <div className="assistant-box">
-            <img src="./image/2nd.png" alt="image"/>
+            <img src={budget} alt="image"/>
             <h9><b>Investment Insights</b></h9>
             <p>AI analyses your holdings to surface<br></br>oppurtunities and hidden risks.</p>
           </div>
 
           <div className="assistant-box">
-            <img src="./image/3rd.png" alt="image"/>
+            <img src={invest} alt="image"/>
             <h9><b>Risk Analysis</b></h9>
             <p>Understand how market shifts effect your<br></br>long-term goals with scenerio modeling.</p>
           </div>
 
           <div className="assistant-box">
-            <img src="./image/3rd.png" alt="image"/>
+            <img src={invest} alt="image"/>
             <h9><b>Tailored Suggestions</b></h9>
             <p>Tailored guidance based on your risk<br></br>profiles, timeline, and financial plan.</p>
           </div>
@@ -192,7 +208,7 @@ function App() {
 
         <p>Everything you need to mentor, optimize, and protect<br></br>your investment in one intuitive workspace</p>
 
-        <img src="/image/11.png" className="features-ui-image" />
+        <img src={eleven} className="features-ui-image" />
       </section>
       <section className="secure-section">
         <div className="secure-content">
@@ -208,12 +224,12 @@ function App() {
         </div>
 
         <div className="hero-visual">
-          <img src="/image/12.png" alt="Hero UI" className="hero-exchange-image" />
+          <img src={twelve} alt="Hero UI" className="hero-exchange-image" />
         </div>
 
       </section>
       <div className="secure-image-wrapper">
-      <img src="/image/effort.png" className="features-ui-image1" />
+      <img src={effort} className="features-ui-image1" />
       </div>
     </div>
     </div>
@@ -391,12 +407,12 @@ function App() {
         </div>
 
         <div className="seamless-logos">
-          <img src="./image/wise.svg" />
-          <img src="./image/stripe.png" />
-          <img src="./image/2.png" />
-          <img src="./image/paypal.webp" />
-          <img src="./image/ally.png" />
-          <img src="./image/chase.png" />
+          <img src={wise}/>
+          <img src={stripe}/>
+          <img src={revolt} />
+          <img src={paypal} />
+          <img src={ally} />
+          <img src={chase}/>
         </div>
       </section>
    
@@ -410,7 +426,7 @@ function App() {
         </div>
 
         <div className="green-cta-right">
-          <img src="/image/6.png" />
+          <img src={sixth} />
         </div>
       </section>
 
@@ -421,7 +437,7 @@ function App() {
 
           <div className="footer-brand">
             <div className="brand">
-            <img src="/image/logo.png" alt="Logo" className="logo-image" />
+            <img src={logo} alt="Logo" className="logo-image" />
             <h3 className="logo">StartlyHQ</h3>
             </div>
             <p>AI-powered wealth management for individuals, startups, and modern financial teams.</p>

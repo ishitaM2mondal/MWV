@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Testimonials.css";
-import {profile} from "../assets/images/profile.png"
+import {profile} from "./image/profile.png"
 
 const testimonials = [
   {

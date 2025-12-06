@@ -1,20 +1,20 @@
 import "./App.css";
 import { useState } from "react";
-import logo from "./assets/images/logo.png";
-import heroImg from "./assets/images/1.png";
-import wise from "./assets/images/wise.svg";
-import stripe from "./assets/images/stripe.png";
-import revolt from "./assets/images/2.png";
-import paypal from "./assets/images/paypal.webp";
-import ally from "./assets/images/ally.png";
-import chase from "./assets/images/chase.png";
-import portfolio from "./assets/images/1st.png";
-import budget from "./assets/images/2nd.png";
-import invest from "./assets/images/3rd.png";
-import {effort} from "./assets/images/effort.png";
-import {eleven} from "./assets/images/11.png";
-import {twelve} from "./assets/images/12.png";
-import {sixth} from "./assets/images/6.png";
+import logo from "./image/logo.png";
+import heroImg from "./image/1.png";
+import wise from "./image/wise.svg";
+import stripe from "./image/stripe.png";
+import revolt from "./image/2.png";
+import paypal from "./image/paypal.webp";
+import ally from "./image/ally.png";
+import chase from "./image/chase.png";
+import portfolio from "./image/1st.png";
+import budget from "./image/2nd.png";
+import invest from "./image/3rd.png";
+import effort from "./image/effort.png";
+import eleven from "./image/11.png";
+import twelve from "./image/12.png";
+import sixth from "./image/6.png";
 
 import Testimonials from "../src/components/Testimonials.jsx";  
 

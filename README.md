@@ -1,6 +1,13 @@
-# StartlyHQ – AI-Powered Financial Management Landing Page
+#  StartlyHQ – AI Financial Management Platform
 
-A modern, fully responsive React-based landing page for **StartlyHQ**, an AI-powered financial management platform. This project focuses on premium UI/UX, smooth responsiveness, and mobile-first optimization with a custom hamburger navigation and clean pricing layout.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://6934677c7e978a11ff1c8d22--roaring-torte-e886f0.netlify.app)
+
+StartlyHQ is a modern AI-powered wealth management web app that helps users track, analyze, and grow their investments using AI insights.
+
+## 🚀 Live Demo  
+```
+👉 https://6934677c7e978a11ff1c8d22--roaring-torte-e886f0.netlify.app
+```
 
 ---
 
@@ -56,3 +63,10 @@ npm install
 npm run dev
 # or
 npm start
+```
+---
+
+## 🚀 Live Demo 
+```
+👉  https://6934677c7e978a11ff1c8d22--roaring-torte-e886f0.netlify.app  
+```
